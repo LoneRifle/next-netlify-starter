@@ -1,0 +1,17 @@
+name: deploy-netlify
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-netlify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@HEAD
+      - uses: actions/setup-node@HEAD
+      - run: npm ci
+      - run: npx netlify-cli deploy --build --prod --message "$GITHUB_REF_NAME@`echo $GITHUB_SHA | cut -c1-7`"
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
