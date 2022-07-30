@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "test": "cypress run"
+    "test": "concurrently --kill-others 'PORT=8888 npm run dev' 'cypress run'"
   },
   "dependencies": {
     "cypress": "^10.0.3",
@@ -15,6 +15,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.13.1"
+    "@netlify/plugin-nextjs": "^4.13.1",
+    "concurrently": "^7.3.0"
   }
 }

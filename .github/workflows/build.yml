@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Test with cypress
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@HEAD
         env:
           PORT: 8888
         with:
