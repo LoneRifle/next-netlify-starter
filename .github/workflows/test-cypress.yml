@@ -1,0 +1,24 @@
+name: Test with cypress
+on:
+  workflow_call:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [lts/*, latest]
+    steps:
+      - uses: actions/checkout@HEAD
+      - uses: actions/setup-node@HEAD
+        with:
+          node-version: ${{ matrix.version }}
+      - run: npm ci
+      - run: npm run build
+      - name: Test with cypress
+        uses: cypress-io/github-action@HEAD
+        env:
+          PORT: 8888
+        with:
+          env: port=$PORT
+          start: npm run dev
