@@ -37,3 +37,9 @@ yarn-error.log*
 # cypress
 cypress/videos
 
+# nyc
+coverage
+
+# typescript
+dist/
+
