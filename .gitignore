@@ -35,5 +35,5 @@ yarn-error.log*
 
 
 # cypress
-cypress/
+cypress/videos
 
