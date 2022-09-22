@@ -9,7 +9,7 @@
     "test": "jest && concurrently --kill-others 'PORT=8888 npm run dev' 'cypress run'"
   },
   "dependencies": {
-    "@nestjs/common": "^9.1.1",
+    "@nestjs/common": "^9.1.2",
     "@nestjs/core": "^9.1.2",
     "@nestjs/platform-express": "^9.1.1",
     "cypress": "^10.8.0",
