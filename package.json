@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.3.10",
-    "@nestjs/core": "^9.3.9",
+    "@nestjs/core": "^9.3.10",
     "@nestjs/platform-express": "^9.3.10",
     "cypress": "^10.11.0",
     "next": "^12.3.1",
