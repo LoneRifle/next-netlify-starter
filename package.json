@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^9.3.0",
-    "@nestjs/testing": "^9.3.11",
+    "@nestjs/testing": "^9.3.12",
     "@netlify/plugin-nextjs": "^4.32.2",
     "@types/jest": "^28.1.8",
     "@types/react": "^18.0.28",
