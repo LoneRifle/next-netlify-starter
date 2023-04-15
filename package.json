@@ -18,7 +18,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@nestjs/cli": "^9.3.0",
+    "@nestjs/cli": "^9.4.0",
     "@nestjs/testing": "^9.4.0",
     "@netlify/plugin-nextjs": "^4.34.0",
     "@types/jest": "^28.1.8",
