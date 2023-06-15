@@ -20,7 +20,7 @@
   "devDependencies": {
     "@nestjs/cli": "^9.5.0",
     "@nestjs/testing": "^9.4.3",
-    "@netlify/plugin-nextjs": "^4.37.2",
+    "@netlify/plugin-nextjs": "^4.37.4",
     "@types/jest": "^28.1.8",
     "@types/react": "^18.2.12",
     "concurrently": "^7.6.0",
